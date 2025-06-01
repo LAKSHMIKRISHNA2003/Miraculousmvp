@@ -1,0 +1,125 @@
+/* General Styles (Desktop View) */
+.login-page {
+  display: flex;
+  flex-direction: column; /* Align elements vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  height: 100vh; /* Make the page fill the entire viewport */
+  background-color: black; /* Set background color to black */
+  padding: 20px; /* Padding to avoid elements touching edges */
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #b4860f; /* Gold text color for the heading */
+  font-family: "Big Shoulders Display";
+  font-size: 54px; /* Font size for the heading */
+  text-align: center; /* Center-align the heading horizontally */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px; /* Add space between the heading and form */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Fixed width for desktop */
+  background-color: #1a1a1a; /* Dark background for the form */
+  padding: 30px; /* Add padding for spacing */
+  border-radius: 10px; /* Round corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the form */
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px; /* Rounded corners for inputs */
+  background-color: #333; /* Dark background for input fields */
+  color: white; /* White text color */
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form input::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #b4860f; /* Update button color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover effect */
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form button:hover {
+  background-color: #a3740d; /* Darker shade on hover */
+}
+.logout-button {
+  margin-top: 10px;
+  padding-left: 150px ;
+  padding-right: 150px;
+  background-color: #a3740d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #a3740d;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .login-page {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 36px; /* Smaller font size for mobile */
+    margin-bottom: 15px; /* Less space between heading and form */
+  }
+
+  .login-form {
+    width: 90%; /* Use full width with some padding */
+    padding: 20px; /* Reduce padding for compact spacing */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Adjust shadow for mobile */
+  }
+
+  .login-form input {
+    margin-bottom: 10px; /* Reduce space between inputs */
+    padding: 8px; /* Smaller padding for inputs */
+    font-size: 14px; /* Slightly smaller text size */
+  }
+
+  .login-form button {
+    padding: 8px; /* Smaller button padding */
+    font-size: 14px; /* Smaller text size for button */
+  }
+
+  .error-message {
+    font-size: 12px; /* Adjust error message font size */
+  }
+  /* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  .logout-button {
+    font-size: 14px; /* Reduce font size on smaller screens */
+    padding: 8px 16px; /* Slightly smaller padding */
+    width: 100%; /* Make the button take up full width on small screens */
+  }
+}
+}

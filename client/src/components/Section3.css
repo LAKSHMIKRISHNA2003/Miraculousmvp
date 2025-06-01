@@ -1,0 +1,50 @@
+/* Main container */
+.section3-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Section title */
+.section3-title {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: "Big Shoulders Display", cursive;
+  color: #b4860f;
+}
+
+/* Map container */
+.map-container {
+  margin: 0 auto;
+  width: 70%; /* Adjust width as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 300px;
+}
+
+/* Mobile View: Adjustments for title and map container */
+@media (max-width: 768px) {
+  .section3-title {
+      font-size: 40px; /* Reduce title size for mobile */
+      margin-bottom: 20px; /* Adjust spacing below the title */
+  }
+
+  .map-container {
+      width: 90%; /* Adjust map width for mobile */
+      height: 250px; /* Reduce map height */
+  }
+}
+
+@media (max-width: 480px) {
+  .section3-title {
+      font-size: 30px; /* Further reduce title size for smaller screens */
+      margin-bottom: 15px;
+  }
+
+  .map-container {
+      width: 95%; /* Use most of the screen width */
+      height: 200px; /* Further reduce map height */
+  }
+}

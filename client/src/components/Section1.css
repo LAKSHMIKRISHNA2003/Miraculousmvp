@@ -1,0 +1,108 @@
+/* Services Section */
+.services-section {
+  background: black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.services-title {
+  font-family: "Big Shoulders Display", cursive;
+  color: #b4860f;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%; /* Ensure full width */
+  margin: 0 auto; /* Center align the card container */
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column; /* Aligns content vertically */
+  flex: 0 1 calc(38%); /* Adjusts to have three cards per row */
+  max-width: 40%; /* Ensures two cards fit in the container */
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 0; /* No padding to ensure full use of space */
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: "Garamond";
+  font-weight: 100;
+  margin-left: 70px;
+  margin-right: 60px;
+  margin-top: 70px;
+}
+
+.services-card:hover {
+  transform: translateY(-5px); /* Adds a subtle hover effect */
+  box-shadow: 0 4px 8px rgba(180, 134, 15, 0.3);
+}
+
+.services-card-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  object-fit: cover; /* Ensures the image fits within the card without distortion */
+}
+
+.services-card-content {
+  display: flex; /* Enables side-by-side layout */
+  justify-content: space-between; /* Places the content evenly */
+  align-items: center; /* Aligns items vertically */
+  position: absolute;
+  bottom: 0; /* Ensures the content stays at the bottom */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Optional: adds background for readability */
+  padding: 1rem;
+  border-top: 2px solid #b4860f; /* Optional: adds a border for styling */
+  text-align: center; /* Centers the content */
+  font-family: Poppins;
+  font-weight: 100;
+}
+
+.services-card-content h3,
+.services-card-content p {
+  margin: 0; /* Removes default margins */
+  padding: 0 1rem; /* Adds padding for spacing */
+}
+
+/* Mobile View: Adjustments for center alignment and sizing */
+@media (max-width: 768px) {
+  .services-title {
+      font-size: 40px; /* Adjust title size for mobile */
+      text-align: center; /* Center-align the title */
+  }
+
+  .services-cards {
+      justify-content: center; /* Center the card container */
+      width: 100%; /* Take full width on mobile */
+  }
+
+  .services-card {
+      flex: 1 1 90%; /* Stack cards vertically on smaller screens */
+      max-width: 90%; /* Adjust card size for better fit */
+      margin: 20px auto; /* Center-align each card and add spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+      font-size: 35px; /* Further reduce title size for very small screens */
+  }
+
+  .services-card {
+      flex: 1 1 100%; /* Full width for smaller screens */
+      max-width: 100%; /* Ensure full-width cards */
+      margin: 15px auto; /* Adjust margin for compact spacing */
+  }
+
+  .services-card-content {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

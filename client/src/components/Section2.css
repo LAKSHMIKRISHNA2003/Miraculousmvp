@@ -1,0 +1,138 @@
+/* Main container */
+.section2-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Section title */
+.section2-title {
+  font-size: 65px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-family: "Big Shoulders Display", cursive;
+  color: #b4860f;
+}
+
+/* Cards container */
+.section2-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Common card styles */
+.section2-card {
+  width: 250px;
+  height: 350px; /* Increase the card length by setting height */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex; /* Align content */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+/* Card specific styles */
+.white-card {
+  background-color: #ffffff;
+}
+.white-card:hover {
+  box-shadow: 0 4px 8px rgb(255, 184, 4);
+}
+
+.gold-card {
+  background-color: #b4860f;
+  color: #ffffff;
+  height: 400px;
+}
+.gold-card:hover {
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+/* Card title styles */
+.section2-card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000000;
+  font-family: poppins;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.white-text {
+  color: #ffffff;
+  font-family: poppins;
+}
+
+.white-title {
+  color: #ffffff;
+  font-family: poppins;
+}
+
+/* Card text styles */
+.section2-card-text {
+  font-size: 14px;
+  color: #000000;
+  font-family: poppins;
+}
+
+/* Mobile View: Adjustments for title and card sizes */
+@media (max-width: 768px) {
+  /* Reduce the title size for mobile */
+  .section2-title {
+      font-size: 40px; /* Smaller title size for mobile */
+      margin-bottom: 30px; /* Adjust spacing below the title */
+  }
+
+  /* Stack cards vertically and adjust size */
+  .section2-card-container {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 20px; /* Add space between cards */
+  }
+
+  .section2-card {
+      width: 90%; /* Adjust card width for mobile */
+      height: 300px; /* Reduce card height */
+      margin: 0 auto; /* Center-align the cards */
+  }
+
+  .gold-card {
+      height: 350px; /* Reduce height for the gold card */
+  }
+
+  .section2-card-title {
+      font-size: 16px; /* Adjust card title size */
+  }
+
+  .section2-card-text {
+      font-size: 12px; /* Adjust card text size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for smaller screens */
+  .section2-title {
+      font-size: 30px; /* Further reduce title size */
+      margin-bottom: 20px;
+  }
+
+  .section2-card {
+      width: 95%; /* Use most of the screen width */
+      height: 280px; /* Adjust card height further */
+  }
+
+  .gold-card {
+      height: 320px; /* Further reduce height for gold card */
+  }
+
+  .section2-card-title {
+      font-size: 14px; /* Smaller title for very small screens */
+  }
+
+  .section2-card-text {
+      font-size: 11px; /* Adjust text size further */
+  }
+}

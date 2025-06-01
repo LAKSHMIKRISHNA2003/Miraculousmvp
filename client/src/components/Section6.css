@@ -1,0 +1,51 @@
+/* Main container */
+.section6-container {
+  text-align: center; /* Center align the content */
+  padding: 50px;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text color */
+}
+
+/* Section title */
+.section6-title {
+  font-size: 60px; /* Title size */
+  font-weight: bold;
+  color: #b4860f; /* Title color */
+  margin-bottom: 20px;
+  font-family: "Big Shoulders Display", cursive; /* Cursive font for title */
+  margin-top: 10px;
+}
+
+/* Paragraph styling */
+.section6-paragraph {
+  font-size: 18px; /* Size of the paragraph text */
+  font-family: "Poppins", sans-serif; /* Sans-serif font for body text */
+  color: #ffffff; /* White text color */
+  max-width: 600px; /* Limit the width of the paragraph */
+  margin: 0 auto; /* Center the paragraph */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .section6-title {
+    font-size: 40px; /* Reduce font size for mobile */
+    margin-bottom: 15px; /* Adjust margin for smaller screen */
+  }
+
+  .section6-paragraph {
+    font-size: 16px; /* Adjust font size of paragraph for mobile */
+    max-width: 90%; /* Make the paragraph width more responsive */
+  }
+}
+
+@media (max-width: 480px) {
+  .section6-title {
+    font-size: 30px; /* Further reduce font size for very small screens */
+    margin-bottom: 10px;
+  }
+
+  .section6-paragraph {
+    font-size: 14px; /* Adjust paragraph size for very small screens */
+    max-width: 100%; /* Allow the paragraph to stretch fully across small screens */
+  }
+}

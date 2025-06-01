@@ -1,0 +1,125 @@
+/* Main container */
+.section4-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  height: 80vh; /* Full viewport height */
+}
+
+.section4-left {
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+  margin-left: 170px;
+}
+
+.section4-left h1 {
+  font-size: 80px;
+  font-family: "Big Shoulders Display", sans-serif;
+  line-height: 1.2;
+}
+
+.section4-left .highlight {
+  color: #b4860f;
+}
+
+.section4-right {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.timings-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: #b4860f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.timings-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-right: 300px;
+}
+
+.timings-table td {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.timings-table tr:nth-child(odd) td {
+  border-bottom: 1px solid #b4860f;
+}
+
+.timings-table tr:nth-child(even) td {
+  border-bottom: 1px solid white;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .section4-container {
+      flex-direction: column; /* Stack containers vertically */
+      height: auto; /* Adjust height for smaller screens */
+      padding: 1rem;
+  }
+
+  .section4-left {
+      margin-left: 0; /* Remove margin */
+      text-align: center; /* Center-align text */
+      padding: 1rem 0;
+  }
+
+  .section4-left h1 {
+      font-size: 50px; /* Reduce font size for smaller screens */
+      line-height: 1.1;
+  }
+
+  .section4-right {
+      margin-top: 20px; /* Add spacing between sections */
+      padding: 1rem 0;
+  }
+
+  .timings-header {
+      font-size: 1.2rem; /* Reduce font size for timings header */
+      width: 80%; /* Adjust width for smaller screens */
+      padding: 0.5rem; /* Adjust padding */
+  }
+
+  .timings-table {
+      width: 100%; /* Use full width */
+      margin-right: 0; /* Remove extra margin */
+  }
+
+  .timings-table td {
+      font-size: 0.9rem; /* Reduce text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section4-left h1 {
+      font-size: 40px; /* Further reduce font size for very small screens */
+  }
+
+  .timings-header {
+      font-size: 1rem; /* Reduce font size further */
+      width: 100%; /* Use full width */
+  }
+
+  .timings-table td {
+      font-size: 0.8rem; /* Smaller font for very small screens */
+      padding: 0.3rem 0.5rem; /* Adjust padding for compact layout */
+  }
+}

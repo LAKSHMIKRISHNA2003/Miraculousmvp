@@ -1,0 +1,86 @@
+.admin-dashboard {
+    font-family: "Poppins", sans-serif;
+    padding: 2rem;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .admin-title {
+    
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+    color: #b4860f;
+    font-family: "Big Shoulders Display", cursive;
+  }
+  
+  .calendar-section {
+    margin: 1.5rem auto; /* Center align horizontally */
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    flex-direction: column; /* Ensure content stacks vertically */
+  }
+  
+  .appointments-section {
+    margin: 2rem 0;
+  }
+  
+  .appointments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .appointment-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 2px solid #b4860f;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-item p {
+    margin: 0.5rem 0;
+  }
+  .admin-dashboard {
+    padding: 20px;
+  }
+  
+  .calendar-section,
+  .appointments-section {
+    margin-bottom: 20px;
+  }
+  
+  .appointments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .appointment-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .logout-button {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    background-color: #b4860f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .logout-button:hover {
+    background-color: #b4860f;
+  }
+  

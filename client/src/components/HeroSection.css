@@ -1,0 +1,134 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background-image: url('../assets/images/1.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevent image repetition */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
+  color: white;
+  padding-left: 20px; /* Add padding to the left for spacing */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  z-index: 1; /* Ensure the overlay is on top of the background */
+}
+
+.hero-content {
+  z-index: 2; /* Ensure the text is on top of the overlay */
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-family: garamond;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 100px;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  padding-top: 100px;
+}
+
+.perfection {
+  font-family: 'Alex Brush', cursive;
+  font-size: 4rem;
+  font-weight: normal;
+  font-size: 100px;
+  margin-top: 100px;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #a4750e; /* Button color */
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+  margin-left: 100px;
+  font-family: poppins;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.contact-btn:hover {
+  background-color: #ffffff; /* Hover effect for button */
+  color: #a4750e;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+      height: 70vh; /* Reduce section height */
+      background-size: contain; /* Ensure the image fits within the section */
+      background-repeat: no-repeat; /* Prevent image repetition */
+  }
+
+  .hero-content {
+      padding-left: 10px; /* Adjust left padding */
+      max-width: 100%; /* Allow content to take full width */
+  }
+
+  .hero-content h1 {
+      font-size: 3rem; /* Adjust title size for mobile */
+      margin-left: 0; /* Align to the left */
+      padding-top: 50px; /* Adjust top padding */
+      line-height: 1.2; /* Adjust line height */
+  }
+
+  .perfection {
+      font-size: 3rem; /* Adjust "PERFECTION" font size for mobile */
+      margin-top: 20px; /* Reduce margin above */
+  }
+
+  .contact-btn {
+      font-size: 0.9rem; /* Adjust button size for mobile */
+      padding: 12px 25px; /* Adjust button padding for mobile */
+      margin-left: 0; /* Align button to the left */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+      height: 60vh; /* Further reduce section height */
+      background-size: cover; /* Ensure the image fits properly */
+      background-repeat: no-repeat; /* Prevent image repetition */
+  }
+
+  .hero-content {
+      padding-left: 10px; /* Adjust left padding */
+  }
+
+  .hero-content h1 {
+      font-size: 2.5rem; /* Smaller title size for very small screens */
+      margin-left: 0; /* Align to the left */
+      line-height: 1.2; /* Adjust line height */
+  }
+
+  .perfection {
+      font-size: 2.5rem; /* Adjust "PERFECTION" font size for very small screens */
+      margin-top: 15px; /* Reduce margin above */
+  }
+
+  .contact-btn {
+      font-size: 0.8rem; /* Smaller button size for very small screens */
+      padding: 10px 20px; /* Smaller button padding */
+      margin-left: 0; /* Align button to the left */
+  }
+}

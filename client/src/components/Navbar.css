@@ -1,0 +1,155 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute space between logo and hamburger */
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent; /* Transparent background */
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+
+}
+
+/* Navbar with scrolled background */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Black background after scrolling */
+}
+
+/* Logo Container */
+.navbar .logo {
+  flex: 1; /* Ensure logo takes up available space */
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left */
+}
+
+.navbar .logo img {
+  max-width: 180px; /* Desktop view */
+  height: auto;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Space between the nav links */
+}
+
+.nav-links li {
+  font-family: poppins;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.nav-links a:hover {
+  color: #b4860f; /* Hover effect for links */
+}
+
+/* Book An Appointment Button */
+.appointment-btn {
+  background-color: #b4860f; /* Button color */
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+.appointment-btn:hover {
+  background-color: #ffffff; /* Hover effect for button */
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none; /* Hide on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  order: 2; /* Place it on the right side in mobile view */
+}
+
+/* Hamburger Icon Bars */
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Show the menu when the hamburger button is clicked */
+.nav-links.active {
+  display: block;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 10px 15px;
+      justify-content: space-between;
+  }
+
+  /* Logo on extreme left */
+  .logo {
+      order: 1; /* Ensure logo is at extreme left */
+      margin-left: 0; /* Remove extra margin */
+  }
+
+  .logo img {
+      max-width: 150px; /* Logo size for tablets */
+  }
+
+  /* Hamburger button on the extreme right */
+  .menu-toggle {
+      display: flex; /* Show on mobile */
+      order: 2; /* Ensure it's at extreme right */
+  }
+
+  .nav-links {
+      display: none; /* Hide the links on mobile by default */
+      flex-direction: column;
+      gap: 10px;
+      background-color: rgba(0, 0, 0, 1); /* Dark overlay */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .nav-links a {
+      font-size: 14px;
+  }
+
+  /* Display the navbar links when the hamburger is clicked */
+  .nav-links.active {
+      display: flex; /* Show the links when active */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 8px 10px;
+  }
+
+  .logo img {
+      max-width: 120px; /* Logo size for mobile */
+  }
+
+  .nav-links a {
+      font-size: 12px;
+  }
+}
